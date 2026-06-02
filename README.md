@@ -12,6 +12,10 @@
   - ✝️ **Gregorian**: International standard date.
   - 🌙 **Lunar Hijri**: Islamic date.
 - **Time Machine (Converter)**: Built-in tool to convert dates between **Shamsi** and **Gregorian** calendars bi-directionally.
+- **Prayer Times (اوقات شرعی)**: Daily prayer times using the official Tehran (University of Tehran) calculation method, with optional geolocation for your own city.
+- **Today's Occasions (مناسبت‌ها)**: Persian-calendar national & religious occasions, with official-holiday badges.
+- **Nowruz Countdown**: Live countdown to the next Persian New Year.
+- **World Clock**: Iran time compared against major diaspora cities (LA, Toronto, London, Dubai, Sydney).
 - **Premium Design**:
   - "Persian Aurora" floating background animations.
   - Glassmorphism 2.0 (Frosted glass effects).
@@ -23,6 +27,7 @@
 - **Vite**: Next Generation Frontend Tooling.
 - **Vanilla JS**: Lightweight and fast performance without framework bloat.
 - **Jalaali-js**: Accurate Jalali date conversion algorithms.
+- **Adhan**: Precise prayer-time calculations (Tehran method).
 - **CSS3**: Using modern features like CSS Variables, Flexbox/Grid, and Keyframe Animations.
 
 ## 🚀 Getting Started

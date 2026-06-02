@@ -2,22 +2,28 @@
 <html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ایران‌تایم | زمان دقیق ایران</title>
+    <meta name="theme-color" content="#050508" />
+    <title>ساعت دقیق ایران و تقویم شمسی امروز | ایران‌تایم</title>
     <!-- SEO Meta Tags -->
-    <meta name="description" content="دقیق‌ترین ساعت ایران و تقویم شمسی. تبدیل تاریخ شمسی به میلادی و قمری، نمایش اوقات شرعی و مناسبت‌های روز. Iran Time & Jalali Calendar." />
-    <meta name="keywords" content="ساعت ایران, تقویم شمسی, تاریخ امروز, تبدیل تاریخ, شمسی به میلادی, تاریخ قمری, Iran Time, Persian Calendar, Jalaali Date Converter" />
+    <meta name="description" content="ساعت دقیق و رسمی ایران (تهران) به‌صورت لحظه‌ای، همراه با تقویم شمسی، میلادی و قمری امروز، اوقات شرعی، مناسبت‌های روز و ابزار تبدیل تاریخ شمسی به میلادی و برعکس در ایران‌تایم." />
+    <meta name="keywords" content="ساعت ایران, ساعت دقیق ایران, تقویم شمسی, تاریخ امروز, تبدیل تاریخ, شمسی به میلادی, میلادی به شمسی, تاریخ قمری, اوقات شرعی, مناسبت‌های امروز, شمارش معکوس نوروز, Iran Time, Persian Calendar, Jalaali Date Converter" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Irantime" />
     <link rel="canonical" href="https://irantime.net/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:site_name" content="ایران‌تایم" />
     <meta property="og:url" content="https://irantime.net/" />
-    <meta property="og:title" content="ایران‌تایم | دقیق‌ترین ساعت و تقویم ایران" />
-    <meta property="og:description" content="نمایش لحظه‌ای ساعت ایران و تقویم هوشمند شمسی. ابزار حرفه‌ای تبدیل تاریخ برای استفاده روزمره." />
+    <meta property="og:title" content="ساعت دقیق ایران و تقویم شمسی امروز | ایران‌تایم" />
+    <meta property="og:description" content="نمایش لحظه‌ای ساعت رسمی ایران و تقویم شمسی، میلادی و قمری، اوقات شرعی، مناسبت‌های روز و ابزار تبدیل تاریخ." />
     <meta property="og:image" content="https://irantime.net/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -30,24 +36,73 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "Irantime",
-      "url": "https://irantime.net/",
-      "description": "Comprehensive Persian calendar and Iran time display with date conversion tools.",
-      "applicationCategory": "UtilityApplication",
-      "operatingSystem": "Web",
-      "offer": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "name": "ایران‌تایم",
+          "alternateName": "Irantime",
+          "url": "https://irantime.net/",
+          "description": "نمایش ساعت دقیق ایران و تقویم شمسی، میلادی و قمری همراه با ابزار تبدیل تاریخ.",
+          "applicationCategory": "UtilityApplication",
+          "operatingSystem": "Web",
+          "inLanguage": "fa-IR",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "name": "ایران‌تایم",
+          "url": "https://irantime.net/",
+          "inLanguage": "fa-IR"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "ساعت دقیق ایران الان چند است؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ایران‌تایم ساعت رسمی ایران (منطقه زمانی تهران، GMT+3:30) را به‌صورت لحظه‌ای و با دقت ثانیه نمایش می‌دهد."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "چطور تاریخ شمسی را به میلادی تبدیل کنم؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "در بخش «ماشین زمان» سال، ماه و روز شمسی را وارد کنید و دکمه محاسبه را بزنید تا معادل میلادی آن نمایش داده شود. تبدیل برعکس (میلادی به شمسی) نیز پشتیبانی می‌شود."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "امروز چندم است؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ایران‌تایم تاریخ امروز را هم‌زمان در سه تقویم شمسی، میلادی و قمری بر اساس وقت رسمی ایران نشان می‌دهد."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "تا نوروز چند روز مانده است؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "در بخش شمارش معکوس تا نوروز می‌توانید زمان دقیق باقی‌مانده تا سال نو شمسی (اول فروردین) را به‌صورت روز، ساعت، دقیقه و ثانیه ببینید."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
 
     <!-- Preload Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Ambient Background Elements -->
@@ -113,6 +168,60 @@
           </div>
         </div>
 
+        <!-- Nowruz Countdown -->
+        <section class="nowruz-panel glass-panel fade-in-up delay-3">
+          <div class="nowruz-header">
+            <span class="nowruz-emoji">🌱</span>
+            <div>
+              <h2>شمارش معکوس تا نوروز</h2>
+              <p id="nowruz-target" class="nowruz-target">...</p>
+            </div>
+          </div>
+          <div class="countdown" id="nowruz-countdown">
+            <div class="countdown-cell"><span class="countdown-num" id="cd-days">--</span><span class="countdown-label">روز</span></div>
+            <div class="countdown-cell"><span class="countdown-num" id="cd-hours">--</span><span class="countdown-label">ساعت</span></div>
+            <div class="countdown-cell"><span class="countdown-num" id="cd-mins">--</span><span class="countdown-label">دقیقه</span></div>
+            <div class="countdown-cell"><span class="countdown-num" id="cd-secs">--</span><span class="countdown-label">ثانیه</span></div>
+          </div>
+        </section>
+
+        <!-- World Clock -->
+        <section class="world-clock glass-panel fade-in-up delay-3">
+          <div class="panel-header">
+            <h2>ساعت جهانی</h2>
+            <p>اختلاف ساعت ایران با شهرهای مهم جهان</p>
+          </div>
+          <div class="world-grid" id="world-grid">
+            <!-- Cities filled by JS -->
+          </div>
+        </section>
+
+        <!-- Today's Occasions -->
+        <section class="occasions-panel glass-panel fade-in-up delay-3">
+          <div class="panel-header">
+            <h2>مناسبت‌های امروز</h2>
+            <p id="occasions-date">...</p>
+          </div>
+          <div class="occasions-list" id="occasions-list">
+            <!-- Filled by JS -->
+          </div>
+        </section>
+
+        <!-- Prayer Times -->
+        <section class="prayer-panel glass-panel fade-in-up delay-3">
+          <div class="panel-header">
+            <h2>اوقات شرعی</h2>
+            <p id="prayer-location">در حال تعیین موقعیت...</p>
+          </div>
+          <div class="prayer-grid" id="prayer-grid">
+            <!-- Filled by JS -->
+          </div>
+          <button id="prayer-locate-btn" class="prayer-locate-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>اوقات شرعی موقعیت من</span>
+          </button>
+        </section>
+
         <!-- Converter Tool -->
         <section class="converter-panel glass-panel fade-in-up delay-4">
           <div class="panel-header">
@@ -151,27 +260,52 @@
         </section>
 
         <!-- SEO Content Section -->
-        <section class="seo-content glass-panel fade-in-up delay-4" style="margin-top: 2rem; padding: 2rem; line-height: 1.8;">
-          <h1 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--accent-secondary);">درباره ایران‌تایم</h1>
-          <p style="color: var(--text-muted); margin-bottom: 1rem;">
-            <strong>ایران‌تایم</strong> ابزاری دقیق و پیشرفته برای نمایش <strong>ساعت دقیق ایران</strong> و مدیریت زمان است. ما با استفاده از الگوریتم‌های دقیق، <a href="#" style="color: var(--accent-primary)">تقویم شمسی</a>، میلادی و قمری را به‌صورت همزمان نمایش می‌دهیم.
+        <section class="seo-content glass-panel fade-in-up delay-4">
+          <h1>ساعت دقیق ایران و تقویم شمسی امروز</h1>
+          <p>
+            <strong>ایران‌تایم</strong> ابزاری دقیق برای نمایش <strong>ساعت رسمی ایران</strong> (تهران، GMT+3:30) به‌صورت لحظه‌ای است. ما تاریخ امروز را هم‌زمان در سه <strong>تقویم شمسی</strong>، میلادی و قمری بر اساس وقت ایران نمایش می‌دهیم، حتی اگر شما خارج از ایران باشید.
           </p>
-          <h2 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: white;">ویژگی‌های کلیدی ایران‌تایم:</h2>
-          <ul style="color: var(--text-muted); list-style: disc; padding-right: 1.5rem; margin-bottom: 1rem;">
+          <h2>ویژگی‌های کلیدی ایران‌تایم</h2>
+          <ul>
             <li>نمایش لحظه‌ای و دقیق <strong>ساعت رسمی ایران</strong> (تهران).</li>
-            <li>تقویم هوشمند با قابلیت نمایش مناسبت‌ها.</li>
-            <li>ابزار حرفه‌ای <strong>تبدیل تاریخ شمسی به میلادی</strong> و برعکس.</li>
-            <li>رابط کاربری مدرن و واکنش‌گرا (Responsive).</li>
+            <li>تاریخ امروز در سه تقویم شمسی، میلادی و قمری به‌صورت هم‌زمان.</li>
+            <li>ابزار <strong>تبدیل تاریخ شمسی به میلادی</strong> و میلادی به شمسی.</li>
+            <li>رابط کاربری مدرن و واکنش‌گرا (Responsive) برای موبایل و دسکتاپ.</li>
           </ul>
-          <p style="color: var(--text-muted);">
-            اگر به دنبال راهی ساده برای تبدیل تاریخ تولد خود از شمسی به میلادی هستید یا می‌خواهید بدانید <em>تاریخ امروز چندم است</em>، ایران‌تایم همراه همیشگی شماست.
+          <p>
+            اگر به دنبال راهی ساده برای تبدیل تاریخ تولد خود از شمسی به میلادی هستید یا می‌خواهید بدانید <em>امروز چندم است</em>، ایران‌تایم همراه همیشگی شماست.
           </p>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section glass-panel fade-in-up delay-4">
+          <h2>سوالات متداول</h2>
+          <details class="faq-item">
+            <summary>ساعت دقیق ایران الان چند است؟</summary>
+            <p>ایران‌تایم ساعت رسمی ایران (منطقه زمانی تهران، GMT+3:30) را به‌صورت لحظه‌ای و با دقت ثانیه در بالای همین صفحه نمایش می‌دهد.</p>
+          </details>
+          <details class="faq-item">
+            <summary>چطور تاریخ شمسی را به میلادی تبدیل کنم؟</summary>
+            <p>در بخش «ماشین زمان» سال، ماه و روز شمسی را وارد کنید و دکمه محاسبه را بزنید تا معادل میلادی آن نمایش داده شود. تبدیل برعکس (میلادی به شمسی) نیز پشتیبانی می‌شود.</p>
+          </details>
+          <details class="faq-item">
+            <summary>امروز چندم است؟</summary>
+            <p>ایران‌تایم تاریخ امروز را هم‌زمان در سه تقویم شمسی، میلادی و قمری بر اساس وقت رسمی ایران نشان می‌دهد.</p>
+          </details>
+          <details class="faq-item">
+            <summary>تا نوروز چند روز مانده است؟</summary>
+            <p>در بخش «شمارش معکوس تا نوروز» می‌توانید زمان دقیق باقی‌مانده تا سال نو شمسی (اول فروردین) را به‌صورت روز، ساعت، دقیقه و ثانیه ببینید.</p>
+          </details>
         </section>
 
       </main>
 
       <footer>
         <p>&copy; 2026 Irantime</p>
+        <a class="github-link" href="https://github.com/okelot/irantime" target="_blank" rel="noopener noreferrer" aria-label="مشاهده کد منبع در گیت‌هاب">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.16-.02-2.1-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+          <span>کد منبع در گیت‌هاب</span>
+        </a>
       </footer>
     </div>
     

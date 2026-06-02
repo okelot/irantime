@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&display=swap');
+/* Vazirmatn is loaded via <link> in index.html (avoids a render-blocking @import). */
 
 :root {
   --font-main: 'Vazirmatn', sans-serif;
@@ -321,6 +321,333 @@ input:focus, select:focus {
   animation: slideDown 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* --- Nowruz Countdown --- */
+.nowruz-panel {
+  padding: 2rem 2.5rem;
+}
+
+.nowruz-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.nowruz-emoji {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.nowruz-header h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.nowruz-target {
+  color: var(--accent-secondary);
+  font-weight: 600;
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.countdown-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1.2rem 0.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+}
+
+.countdown-num {
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 1;
+  color: white;
+  font-variant-numeric: tabular-nums;
+}
+
+.countdown-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* --- World Clock --- */
+.world-clock {
+  padding: 2.5rem;
+}
+
+.world-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.world-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1rem 1.2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+}
+
+.world-flag { font-size: 1.4rem; }
+
+.world-name {
+  flex: 1;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.world-time {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- Today's Occasions --- */
+.occasions-panel { padding: 2.5rem; }
+
+.occasions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.occasion-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 1.2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+}
+
+.occasion-item.holiday {
+  background: rgba(219, 39, 119, 0.1);
+  border-color: rgba(219, 39, 119, 0.3);
+}
+
+.occasion-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-secondary);
+  flex-shrink: 0;
+}
+
+.occasion-item.holiday .occasion-dot { background: var(--accent-tertiary); }
+
+.occasion-title {
+  flex: 1;
+  font-weight: 600;
+  color: white;
+}
+
+.occasion-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--accent-tertiary);
+  padding: 0.25rem 0.6rem;
+  border-radius: 50px;
+}
+
+.occasion-cal {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border: 1px solid var(--glass-border);
+  padding: 0.2rem 0.55rem;
+  border-radius: 50px;
+}
+
+.occasions-empty,
+.occasions-note {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.occasions-note { margin-top: 0.4rem; }
+
+/* --- Prayer Times --- */
+.prayer-panel { padding: 2.5rem; }
+
+.prayer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.prayer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1.2rem 0.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+}
+
+.prayer-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.prayer-time {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  font-variant-numeric: tabular-nums;
+}
+
+.prayer-locate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+  padding: 0.8rem 1.4rem;
+  border-radius: 50px;
+  background: rgba(6, 182, 212, 0.12);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  color: var(--accent-secondary);
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.prayer-locate-btn:hover {
+  background: rgba(6, 182, 212, 0.2);
+  transform: translateY(-2px);
+}
+
+/* --- FAQ --- */
+.faq-section {
+  margin-top: 2rem;
+  padding: 2rem 2.5rem;
+}
+
+.faq-section > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-secondary);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--glass-border);
+  padding: 0.4rem 0;
+}
+
+.faq-item:last-child { border-bottom: none; }
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.9rem 0;
+  font-weight: 600;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.faq-item summary::-webkit-details-marker { display: none; }
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 1.4rem;
+  color: var(--accent-secondary);
+  transition: transform 0.3s;
+}
+
+.faq-item[open] summary::after {
+  content: '−';
+}
+
+.faq-item p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  padding: 0 0 1rem;
+}
+
+/* --- Footer --- */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0 2rem;
+  color: var(--text-muted);
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.github-link:hover {
+  color: white;
+  border-color: var(--glass-highlight);
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+/* --- SEO Content --- */
+.seo-content {
+  margin-top: 2rem;
+  padding: 2rem;
+  line-height: 1.8;
+}
+
+.seo-content h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-secondary);
+}
+
+.seo-content h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.seo-content p {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.seo-content ul {
+  color: var(--text-muted);
+  list-style: disc;
+  padding-right: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 /* --- Utilities --- */
 .glass-panel {
   background: var(--glass-surface);
@@ -362,4 +689,19 @@ input:focus, select:focus {
   .digital-clock { font-size: 4rem; }
   .bento-grid { grid-template-columns: 1fr; }
   .inputs-row { flex-direction: column; }
+  .countdown { gap: 0.5rem; }
+  .countdown-cell { padding: 0.9rem 0.3rem; }
+  .countdown-num { font-size: 1.7rem; }
+}
+
+/* --- Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .fade-in-up { opacity: 1; }
 }
